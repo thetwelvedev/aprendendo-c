@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main(){
-    printf("Hello World!\n"); //Teste de comentário
+    printf("Hello World!\n"); //Primeiro código e comentário
     return 0;
 }
