@@ -1,2 +1,3 @@
 # aprendendo-c
- Destinada ao aprendizado da linguagem C
+### Destinada ao aprendizado da linguagem C
+> Desenvolvi o conhecimento de entrada, saída, tipos de dados...
