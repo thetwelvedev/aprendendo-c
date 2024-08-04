@@ -10,16 +10,16 @@ int main(){
     do{
         printf("Digite o valor de A:\n");
         scanf("%f", &a);
-        fflush(stdin);   
+        getchar();   
         printf("Digite o valor de B:\n");
         scanf("%f", &b);
-        fflush(stdin);
+        getchar();
         potencia = pow(a,b);
         printf("A elevando a B: %.2f\n", potencia);
 
         printf("Deseja repetir a operacao?[s/n]\n");
         scanf("%c", &opcao);
-        fflush(stdin);
+        getchar();
     } while (opcao != 'n' && opcao != 'N'); //Tem que ser o AND pois se usar o OR um lado vai ser verdadeiro ainda e vai continuar rodando
     
 }
