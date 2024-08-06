@@ -9,9 +9,9 @@ int main(){
     printf("Digite um numero:\n");
     scanf("%d", &n);
 
-    for(i = 1; i <= n; i++){
-        fat = 1; //Para não acumular para o próximo loop
-        for(int j = 1; j <= i; j++){
+    for(i = 1; i <= n; i++){// Esse é o loop da somas das frações
+        fat = 1; //ele o próximo loop calcular certinho o fatorial, começando do 1
+        for(int j = 1; j <= i; j++){//Esse vai ser o loop do fatorial, tendo a parada o número da fração
             fat *= j;
         }
         e += 1.0/fat;
