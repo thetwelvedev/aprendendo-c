@@ -1,5 +1,15 @@
 {
     "files.associations": {
         "stdio.h": "c"
+    },
+    "terminal.integrated.env.windows": {
+    "LANG": "pt_BR.UTF-8"
+    },
+    "terminal.integrated.env.linux": {
+        "LANG": "pt_BR.UTF-8"
+    },
+    "terminal.integrated.env.osx": {
+        "LANG": "pt_BR.UTF-8"
     }
+
 }
