@@ -4,8 +4,8 @@
 #include <locale.h>
 
 int main(){
-    int vetor[8];
-    int i, j = 0, k = 0, contador_positivo = 0, contador_negativo = 0;
+    int vetor[8], vetor_positivo[8], vetor_negativo[8];
+    int i, j = 0, k = 0;
 
     setlocale(LC_ALL, "Portuguese");
 
@@ -15,28 +15,20 @@ int main(){
     }
     for(i = 0;i < 8; i++){
         if(vetor[i] >= 0){
-            contador_positivo += 1;
-        } else {
-            contador_negativo += 1;
-        }
-    }
-    int vetor_positivo[contador_positivo], vetor_negativo[contador_negativo];
-    for(i = 0;i < 8; i++){
-        if(vetor[i] >= 0){
-            vetor_positivo[j] = vetor[i];
+            vetor_positivo[j] = vetor[i];//A posição que o vetor vai ser preenchido vair ditado pelo j
             j++;
         } else {
-            vetor_negativo[k] = vetor[i];
+            vetor_negativo[k] = vetor[i];//A posição que o vetor vai ser preenchido vair ditado pelo k
             k++;
         }
     }
     printf("Vetor de positivos:\n");
-    for(k = 0;k < contador_positivo; k++){
-        printf("%d ", vetor_positivo[k]);
+    for(i = 0;i < j; i++){//Vai mostrar a posição do vetor até onde foi coloca um valor
+        printf("%d ", vetor_positivo[i]);
     }
     printf("\nVetor de negativos:\n");
-    for(k = 0;k < contador_negativo; k++){
-        printf("%d ", vetor_negativo[k]);
+    for(i = 0;i < k; i++){//Vai mostrar a posição do vetor até onde foi coloca um valor
+        printf("%d ", vetor_negativo[i]);
     }
 
     return 0;
