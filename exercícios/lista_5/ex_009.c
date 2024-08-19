@@ -1,4 +1,4 @@
-//Desenvolva um algoritmo que preencha uma matriz numérica de dimensões 3x3. Depois de a matriz ter sido populada, o algoritmo deverá imprimir a matriz da seguinte forma: os dados da diagonal principal devem ser impressos normalmente e os dados fora da diagonal principal devem substituídos por zero.
+//Desenvolva um algoritmo que preencha uma matriz numérica de dimensões 3x3. Ao final, o algoritmo deve mostrar o somatório de todos os elementos da matriz, bem como a média aritmética entre todos os termos.
 #include <stdio.h>
 #include <string.h>
 #include <locale.h>
@@ -13,12 +13,8 @@ int main(){
         for(j = 0;j < 3; j++){
             printf("Insira o dado da posição %d, %d: \n", i+1, j+1);
             scanf("%d", &matriz[i][j]);
-            contador ++;
-        }
-    }
-    for(i = 0;i < 3; i++){
-        for(j = 0;j < 3; j++){
             soma += matriz[i][j];
+            contador ++;
         }
     }
     media = soma/contador;
