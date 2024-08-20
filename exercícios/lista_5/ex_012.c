@@ -5,7 +5,7 @@
 
 int main(){
     int matriz[3][5], vetor[3];
-    int i, j, somatorio = 0;
+    int i, j;
 
     setlocale(LC_ALL, "Portuguese");
 
