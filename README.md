@@ -4,4 +4,4 @@
 > Desenvolvi o conhecimento de entrada, saída, tipos de dado, condicionais,
 laço de repetição, vetores, strings, structs, funções e uso de arquivos-fonte.
 ### Aprendendo mais sobre C
-> Instalando o Eclipce e JDK 21 na máquina
+> Aprendendo os primeiros passos, função main, compilador...
