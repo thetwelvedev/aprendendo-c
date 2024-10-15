@@ -4,17 +4,22 @@
 
 int main(){
 setlocale(LC_ALL, "portuguese"); 
-	int num, soma = 0;
+	int num, soma = 0; //Valores que não são inicializados vão conter lixo de mémoria
+	//entrada
+    printf("Digite números inteiros para somar (0 para parar):\n");
+	scanf("%d", &num);
 
-    // Loop para receber 5 números inteiros
-    for (int i = 0; i < 5; i++) {
+    // Loop continua até que o número inserido seja 0
+    while(num != 0) {
+		//processamento
+        soma += num;  // Soma o número inserido à variável soma
+
         printf("Digite um número inteiro: ");
         scanf("%d", &num);
-        soma += num;  // Soma o número inserido à variável soma
     }
 
-    // Exibe a soma dos números
-    printf("A soma dos 5 números é: %d\n", soma);
+    //saída
+    printf("A soma dos números é: %d\n", soma);
 	
 	return 0;
 }
