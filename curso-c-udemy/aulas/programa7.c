@@ -1,12 +1,14 @@
 #include <stdio.h>
+#include <locale.h>
 /*
 Tipos de Dados
 
-Tipos NumÃ©ricos:
+Tipos Numéricos:
 	- Inteiros;
 	- Reais;
 */
 int main(){
+	setlocale(LC_ALL, "portuguese"); 
 	//inteiro
 	//int nota1, nota2; //7, 890, ...
 
@@ -22,7 +24,7 @@ int main(){
 
 	media = nota1 + nota2 / 2;
 
-	printf("Sua mÃ©dia Ã© %.1f", media);
+	printf("Sua média é %.1f", media);
 
 	return 0;
 }
