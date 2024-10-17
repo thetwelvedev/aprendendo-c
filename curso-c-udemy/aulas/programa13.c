@@ -15,10 +15,10 @@ setlocale(LC_ALL, "portuguese");
 	//vetores e reais
 	float valores[5];//0..4
 	for(int i = 0; i < 5; i++){
-		valores[i] == numeros[i] / 2;
+		valores[i] = numeros[i] / 2.0;
 	}
 
 	for(int i = 4; i >= 0; i--){
-		printf("%f\n", valores[i]);
+		printf("%.2f\n", valores[i]);
 	}
 }
