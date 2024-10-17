@@ -1,4 +1,4 @@
-//
+//Vetores de strings e chars
 #include <stdio.h>
 #include <locale.h>
 
@@ -21,11 +21,6 @@ setlocale(LC_ALL, "portuguese");
 	for(int i = 0; i <= 25; i++){
 		printf("%d == %c\n", letras[i], letras[i]);
 	}
-	// //Vetores de inteiros
-	// int numeros[10];
-
-	// //Vetores e reais
-	// float valores[5];
 
 	return 0;
 }
