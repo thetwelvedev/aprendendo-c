@@ -4,6 +4,18 @@
 
 int main(){
 setlocale(LC_ALL, "portuguese");
+	int valor[10];
 
+	for (int i = 0; i <10; i++){
+		printf("Digite um número: ");
+		scanf("%d", &valor[i]);
+	}
+	for (int i = 0; i <10; i++){
+		if(valor[i] < 0){
+			valor[i] = 0;
+		}
+		printf("%d\n", valor[i]);
+	}
+	
 	return 0;
 }

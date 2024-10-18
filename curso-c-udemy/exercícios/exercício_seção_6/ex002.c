@@ -4,6 +4,20 @@
 
 int main(){
 setlocale(LC_ALL, "portuguese");
+	int valor[10];
+
+	for (int i = 0; i <10; i++){
+		printf("Digite um número: ");
+		scanf("%d", &valor[i]);
+	}
+	int contador = 0;
+	for (int i = 0; i <10; i++){
+		if(valor[i] % 2 == 0){
+			printf("%d\n", valor[i]);
+			contador ++;
+		}
+	}
+	printf("Tem %d números pares!\n", contador);
 
 	return 0;
 }
