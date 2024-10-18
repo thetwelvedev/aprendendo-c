@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 void mensagem(){
 	printf("Bem-vindo...\n");
 }
