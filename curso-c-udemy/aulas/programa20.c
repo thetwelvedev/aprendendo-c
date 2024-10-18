@@ -8,20 +8,21 @@ int main(){
 
 	mensagem();
 
-	printf("Informe o primeiro nÃºmero: ");
+	printf("Informe o primeiro número: ");
 	scanf("%d", &n1);
 
-	printf("Informe o segundo nÃºmero: ");
+	printf("Informe o segundo número: ");
 	scanf("%d", &n2);
 
 	ret_s = soma(n1, n2);
-	printf("A soma de %d com %d Ã© %d\n", n1, n2, ret_s);
+	printf("A soma de %d com %d é %d\n", n1, n2, ret_s);
 
 	ret_m = multiplicacao(n1, n2);
-	printf("A multiplicaÃ§Ã£o de %d com %d Ã© %d\n", n1, n2, ret_m);
+	printf("A multiplicação de %d com %d é %d\n", n1, n2, ret_m);
 
 	return 0;
 }
-/*PARA RODAR MÃšLTIPLOS ARQUIVOS:
+/*PARA RODAR MÚLTIPLOS ARQUIVOS:
 gcc programa20.c ajuda.c ajuda.h -o programa20.exe
-Nesse caso sÃ£o os arquivos que eu quero rodar*/
+./programa20.exe -> só roda no terminal
+Nesse caso são os arquivos que eu quero rodar*/
