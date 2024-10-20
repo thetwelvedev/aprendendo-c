@@ -4,4 +4,6 @@
 > Desenvolvi o conhecimento de entrada, saída, tipos de dado, condicionais,
 laço de repetição, vetores, strings, structs, funções e uso de arquivos-fonte.
 ### Aprendendo mais sobre C
-> Aprendendo os primeiros passos, função main, compilador...
+> Aprendendo os primeiros passos, função main, compilador, estruturas de decisões, 
+estruturas de repetição, tipos de dados, vetores, matrizes, números binários, funções,
+ponteiros...
