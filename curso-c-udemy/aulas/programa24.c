@@ -1,18 +1,31 @@
 #include <stdio.h>
-// FILE == arquivo
+#include <locale.h>
 
 int main(){
-	FILE *arq;
+	setlocale(LC_ALL, "portuguese");
+	/*  0   1    2    3   4
+	 *----------------------
+	 *| 1 | 2 |  3 | 4 | 5 |
+	 *----------------------
+	 * int = 4 bytes
+	 * bit 0 / 1
+	 * byte 0000 0001
+	 * 4 bytes = 0000 0000 0000 0000 0000 0000 0000 0001
+	*/
+	int valores[5] = {1, 2, 3, 4, 5};
 
-	//fopen(nome-do-arquivo, forma-de-abertura-do-arquivo)
-	//w - abrir o arquivo para escrita (se o arquivo j√° existir, ser√° sobrescrito com um novo zerado)
-	//r - abrir o arquivo para leitura (n√£o podemos escrever no arquivo)
-	//wa - abrir o arquivo para adi√ß√£o de conte√∫do (se o arquivo j√° existir, o conte√∫do ser√° adicionado nas linhas abaixo)
-	arq = fopen("arquivo.txt", "w");
+	for(int i = 0; i < 5; i++){
+		printf("O valor %d tem %ld bytes\n", valores[i], sizeof(valores[i])); // %ld - long int 
+	}
+	printf("O array valores possui %ld bytes\n", sizeof(valores));
 
+	printf("valores[0] vale %d e endereÁo de memÛria È %p\n", valores[0], valores[0]); //Est· dando endereÁo de mÈmoria n˙merico en n„o hexadecimal
+	printf("*(valores) vale %d e endereÁo de memÛria È %p\n", *(valores), *(valores)); //Aqui o ponteiro aponta para a primeira posiÁ„o do array 
 
-	//sempre que a gente finalizar a manipula√ß√£o de um arquivo, devemos fech√°-lo
-	fclose(arq);
-
+	printf("*(valores+1) vale %d e endereÁo de memÛria È %p\n", *(valores+1), *(valores+1)); //Ao somar +1 o ponteiro vai para segunda posiÁ„o j· que ele aponta sempre para primeira
+	printf("*(valores+2) vale %d e endereÁo de memÛria È %p\n", *(valores+2), *(valores+2));
+	printf("*(valores+3) vale %d e endereÁo de memÛria È %p\n", *(valores+3), *(valores+3));
+	printf("*(valores+4) vale %d e endereÁo de memÛria È %p\n", *(valores+4), *(valores+4));
 	return 0;
+	//%zu … para inprimir valor do tipo size_t que È unsigned 
 }
