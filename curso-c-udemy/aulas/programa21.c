@@ -1,40 +1,45 @@
+//Mostrando que função nesse estado só pega o valor e coloca num novo espaço de mémoria
 #include <stdio.h>
-//hardware/lÃ³gico/memÃ³ria
+#include <locale.h>
+//hardware/lógico/memória
 
-//endereÃ§o de memÃ³ria como parÃ¢metro de entrada
-void incrementa(int* contador){
+//endereço de memória como parâmetro de entrada
+void incrementa(int contador){
+	printf("\nFunção incrementa\n");
 	printf("Antes de incrementar.\n");
-	printf("O contador vale %d\n", (*contador)); //valor
-	printf("O endereÃ§o de memÃ³ria Ã© %d\n", contador); //endereÃ§o de memÃ³ria
+	printf("O contador vale %d\n", contador); //valor
+	printf("O endereço de memória é %d\n", &contador); //endereço de memória
+
 
 	printf("Depois de incrementar.\n");
 	// valor = valor + 1;
 	// valor = valor - 1;
-	//valor++;
+	//valor++; só incrementa depois
 	//valor--;
 	//+=valor;
-	//--valor;
-	printf("O contador vale %d\n", ++(*contador));
-	printf("O endereÃ§o de memÃ³ria Ã© %d\n", contador);
+	//--valor; decrementa antes
+	printf("O contador vale %d\n", ++contador);
+	printf("O endereço de memória é %d\n", &contador); 
+	
 }
 
 int main(){
-	// quando declaramos uma variÃ¡vel, a linguagem c
-	// aloca um espaco em memÃ³ria para colocar
+	setlocale(LC_ALL, "portuguese"); 
+	// quando declaramos uma variável, a linguagem c
+	// aloca um espaco em memória para colocar
 	// este valor.
 	int contador = 10;
 
 	printf("Antes de incrementar.\n");
 	printf("O contador vale %d\n", contador);
-	printf("O endereÃ§o de memÃ³ria Ã© %d\n", &contador);
-
-	//cÃ³pia por valor
-	incrementa(&contador);
-	//scanf("%d", &contador);
+	printf("O endereço de memória é %d\n", &contador);
 
 	printf("Depois de incrementar.\n");
 	printf("O contador vale %d\n", contador);
-	printf("O endereÃ§o de memÃ³ria Ã© %d\n", &contador);
+	printf("O endereço de memória é %d\n", &contador);
+
+	//cópia por valor
+	incrementa(contador);
 
 	return 0;
 }
