@@ -20,8 +20,7 @@ int main(){
 	printf("O array valores possui %ld bytes\n", sizeof(valores));
 
 	printf("valores[0] vale %d e endereço de memória é %p\n", valores[0], valores[0]); //Está dando endereço de mémoria númerico não hexadecimal
-	printf("*(valores) vale %d e endereço de memória é %p\n", *(valores), *(valores)); //Quando você coloca um ponteiro num array ele sempre aponta para primeira posição, então ao somar +1
-	//por exemplo você acaba avançando a posição no array
+	printf("*(valores) vale %d e endereço de memória é %p\n", *(valores), *(valores)); //Aqui o ponteiro aponta para a primeira posição do array
 
 	printf("*(valores+1) vale %d e endereço de memória é %p\n", *(valores+1), *(valores+1)); //Ao somar +1 o ponteiro vai para segunda posição já que ele aponta sempre para primeira
 	printf("*(valores+2) vale %d e endereço de memória é %p\n", *(valores+2), *(valores+2));
