@@ -7,6 +7,7 @@ int main(){
 
 	//declarando
 	int* p; //ponteiro é um valor que aponta para um endereço de memória
+	//Declarando com * no int ao invés  do p, só a variavél a direita do int será ponteiro as outra vão ter que vim *
 
 	printf("Informe um número: ");
 	scanf("%d", &n);
