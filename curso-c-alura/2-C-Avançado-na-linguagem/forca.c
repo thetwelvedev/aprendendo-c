@@ -1,11 +1,26 @@
 #include <stdio.h>
 #include <string.h>
+#include <locale.h>
+
+void cabecalho(){
+    printf("*******************\n");
+    printf("*  JOGO DA FORCA  *\n");
+    printf("*******************\n");
+}
+
+void chuta(char chutes[26], int tentativas){ //Esse nome tentativas È sÛ o nome do paramÍtro e n„o a vari·vel tentativas
+    char chute;
+        printf("Qual letra? ");
+        scanf(" %c", &chute);
+
+        chutes[tentativas] = chute; //Vai guardar o chute no array chutes para comparar com o array palavra secreta
+}
 
 int main() {
-
+    setlocale(LC_ALL, "Portuguese");
     char palavrasecreta[20];
-    sprintf(palavrasecreta, "MELANCIA"); /*A fun√ß√£o sprintf escreve uma sa√≠da formatada em uma string e automaticamente adiciona o caractere nulo '\0' ao final, indicando o t√©rmino da string. 
-    Ela permite formatar dados e armazen√°-los em uma vari√°vel do tipo char em vez de exibi-los na tela.*/
+    sprintf(palavrasecreta, "MELANCIA"); /*A funÁ„o sprintf escreve uma saÌda formatada em uma string e automaticamente adiciona o caractere nulo '\0' ao final, indicando o tÈrmino da string. 
+    Ela permite formatar dados e armazen·-los em uma vari·vel do tipo char em vez de exibi-los na tela.*/
 
     int acertou = 0;
     int enforcou = 0;
@@ -13,34 +28,32 @@ int main() {
     char chutes[26];
     int tentativas = 0;
 
+    cabecalho();
+
     do {
-        //Todo novo loop o for come√ßa do 0 por isso ele compara todas as letras
-        for(int i = 0; i < strlen(palavrasecreta); i++) { // Como n√£o tem um n√∫mero de tentativas no primeiro loop ele vai imprimir logo a forca vazia, todo loop desse as letras de chutes compararam com todas as letras de palavra secreta
+        //Todo novo loop o for comeÁa do 0 por isso ele compara todas as letras
+        for(int i = 0; i < strlen(palavrasecreta); i++) { // Como n„o tem um n˙mero de tentativas no primeiro loop ele vai imprimir logo a forca vazia, todo loop desse as letras de chutes compararam com todas as letras de palavra secreta
             int achou = 0;
-            //O loop principal vai rodar esse segundo loop inteiro a cada intera√ß√£o com isso ele faz a compara√ß√£o de todas as letras de chutes(at√© o momento) com cada posi√ß√£o em palavra secreta.
+            //O loop principal vai rodar esse segundo loop inteiro a cada interaÁ„o com isso ele faz a comparaÁ„o de todas as letras de chutes(atÈ o momento) com cada posiÁ„o em palavra secreta.
             for(int j = 0; j < tentativas; j++) { //Vai rodar a partir do momento que tentativas = 1 
-                if(chutes[j] == palavrasecreta[i]) { //Aqui a letra de chute vai comparar com a letra de palavra secreta, se tiver 3 letras em chutes, ent√£o seram feita 3 compara√ß√µes(se acertar para a compara√ß√£o)
+                if(chutes[j] == palavrasecreta[i]) { //Aqui a letra de chute vai comparar com a letra de palavra secreta, se tiver 3 letras em chutes, ent„o seram feita 3 comparaÁıes(se acertar para a comparaÁ„o)
                     achou = 1;
                     break;
                 }
             }
 
             if(achou) {
-                printf("%c ", palavrasecreta[i]); //Quando acha coloca a letra no lugar do tra√ßo
+                printf("%c ", palavrasecreta[i]); //Quando acha coloca a letra no lugar do traÁo
             } else {
                 printf("_ ");
             }
         }
         printf("\n");
 
-        char chute;
-        printf("Qual letra? ");
-        scanf(" %c", &chute);
+        //Captura um novo chute
+        chuta(chutes, tentativas);
+        tentativas++; 
 
-        chutes[tentativas] = chute; //Vai guardar o chute no array chutes para comparar com o array palavra secreta
-        tentativas++;
-
-
-    } while (!acertou && !enforcou);//Enquanto n√£o acertar e n√£o for enforcado o jogador vai continuar
+    } while (!acertou && !enforcou);//Enquanto n„o acertar e n„o for enforcado o jogador vai continuar
 
 }
