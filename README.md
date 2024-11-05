@@ -7,3 +7,4 @@ laço de repetição, vetores, strings, structs, funções e uso de arquivos-fon
 > Aprendendo os primeiros passos, função main, compilador, estruturas de decisões, 
 estruturas de repetição, tipos de dados, vetores, matrizes, números binários, funções,
 ponteiros,leitura e escrita de arquivos...
+>
