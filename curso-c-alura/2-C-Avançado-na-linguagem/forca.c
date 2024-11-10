@@ -30,11 +30,29 @@ int jachutou(char letra, char chutes[26], int tentativas){
     return achou;
 }
 
+void desenhaforca(char palavrasecreta[20], char chutes[26], int tentativas){
+    //Todo novo loop o for começa do 0 por isso ele compara todas as letras
+    for(int i = 0; i < strlen(palavrasecreta); i++) { // Como não tem um número de tentativas no primeiro loop ele vai imprimir logo a forca vazia, todo loop desse as letras de chutes compararam com todas as letras de palavra secreta
+
+        //Aqui está o código
+        int achou = jachutou(palavrasecreta[i], chutes, tentativas);
+
+        if(achou) {
+            printf("%c ", palavrasecreta[i]); //Quando acha coloca a letra no lugar do traço
+        } else {
+            printf("_ ");
+        }
+    }
+    printf("\n");
+}
+void escolhepalavra(char palavrasecreta[20]){
+    sprintf(palavrasecreta, "MELANCIA"); /*A função sprintf escreve uma saída formatada em uma string e automaticamente adiciona o caractere nulo '\0' ao final, indicando o término da string. 
+    Ela permite formatar dados e armazená-los em uma variável do tipo char em vez de exibi-los na tela.*/
+}
+
 int main() {
     setlocale(LC_ALL, "Portuguese");
     char palavrasecreta[20];
-    sprintf(palavrasecreta, "MELANCIA"); /*A função sprintf escreve uma saída formatada em uma string e automaticamente adiciona o caractere nulo '\0' ao final, indicando o término da string. 
-    Ela permite formatar dados e armazená-los em uma variável do tipo char em vez de exibi-los na tela.*/
 
     int acertou = 0;
     int enforcou = 0;
@@ -42,23 +60,11 @@ int main() {
     char chutes[26];
     int tentativas = 0;
 
+    escolhepalavra(palavrasecreta);
     cabecalho();
 
     do {
-        //Todo novo loop o for começa do 0 por isso ele compara todas as letras
-        for(int i = 0; i < strlen(palavrasecreta); i++) { // Como não tem um número de tentativas no primeiro loop ele vai imprimir logo a forca vazia, todo loop desse as letras de chutes compararam com todas as letras de palavra secreta
-
-            //Aqui está o código
-            int achou = jachutou(palavrasecreta[i], chutes, i++);
-
-            if(achou) {
-                printf("%c ", palavrasecreta[i]); //Quando acha coloca a letra no lugar do traço
-            } else {
-                printf("_ ");
-            }
-        }
-        printf("\n");
-
+        desenhaforca(palavrasecreta, chutes, tentativas);
         //Captura um novo chute
         chuta(chutes, &tentativas);
 
