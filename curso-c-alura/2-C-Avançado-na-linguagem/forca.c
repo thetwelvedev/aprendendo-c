@@ -8,12 +8,13 @@ void cabecalho(){
     printf("*******************\n");
 }
 
-void chuta(char chutes[26], int tentativas){ //Esse nome tentativas é só o nome do paramêtro e não a variável tentativas
+void chuta(char chutes[26], int* tentativas){ //Esse nome tentativas é só o nome do paramêtro e não a variável tentativas
     char chute;
         printf("Qual letra? ");
         scanf(" %c", &chute);
-
-        chutes[tentativas] = chute; //Vai guardar o chute no array chutes para comparar com o array palavra secreta
+        //Vai guardar o chute no array chutes para comparar com o array palavra secreta
+        chutes[(*tentativas)] = chute; //*tentativas vai acessar o valor
+        (*tentativas)++; //Dessa forma o ++ vai ser no conteúdo e não no endereço de memória
 }
 
 int main() {
@@ -51,8 +52,7 @@ int main() {
         printf("\n");
 
         //Captura um novo chute
-        chuta(chutes, tentativas);
-        tentativas++; 
+        chuta(chutes, &tentativas);
 
     } while (!acertou && !enforcou);//Enquanto não acertar e não for enforcado o jogador vai continuar
 
