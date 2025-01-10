@@ -3,6 +3,8 @@
   aprendendo-c
 </h1>
 
+---
+
 ## Meu estudos de C e cursos
 
 ### Curso de C do professor Pietro
@@ -21,6 +23,8 @@ e structs (tipos customizados).
 
 #### Resoluções Beecrowd
 [Acesse aqui](/beecrowd/)
+
+---
 
 #### Ferramentas e linguagens utilizadas:
 
