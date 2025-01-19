@@ -4,7 +4,7 @@
 </h1>
 
 ## Destinada ao aprendizado da linguagem C
-### Curso de C do professor Pietro
+#### Curso de C do professor Pietro
 > Desenvolvi o conhecimento de entrada, saída, tipos de dado, condicionais,
 laço de repetição, vetores, strings, structs, funções e uso de arquivos-fonte.
 ### University Academy - Udemy
@@ -12,7 +12,7 @@ laço de repetição, vetores, strings, structs, funções e uso de arquivos-fon
 estruturas de repetição, tipos de dados, vetores, matrizes, números binários, funções,
 ponteiros,leitura, escrita de arquivos, structs, bibliotecas...
 
-### Ferramentas e linguagens utilizadas:
+#### Ferramentas e linguagens utilizadas:
 <div>
   <img src="https://img.shields.io/badge/-VS%20Code-007ACC?logo=visual-studio-code&logoColor=white&style=flat" alt="VS Code">
   <img src="https://img.shields.io/badge/-C-00599C?logo=c&logoColor=white&style=flat" alt="C">
