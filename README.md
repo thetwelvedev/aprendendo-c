@@ -3,7 +3,7 @@
   aprendendo-c
 </h1>
 
-## Destinada ao aprendizado da linguagem C
+## Meu estudos de C e cursos
 
 ### Curso de C do professor Pietro
 > Desenvolvi o conhecimento de entrada, saída, tipos de dado, condicionais,
