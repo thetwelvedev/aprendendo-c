@@ -46,6 +46,14 @@ int main(void){
 
     printf("Resto da divisao %d \n", resto);
 
+    //Condicionais
+    if(resto == 0){
+        printf("Numero par!\n");
+    }
+    else{
+        printf("Numero impar!\n");
+    }
+
     system("Pause"); //somente para windows
     return 0;
 }
