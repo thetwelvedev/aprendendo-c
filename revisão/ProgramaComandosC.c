@@ -77,7 +77,6 @@ int main(void){
     else{
         printf("De recuperacao!\n");
     }
-    */
     //Condicinal switch..case
     printf("Digite um valor de 1 a 7: ");
     scanf("%d", &dia);
@@ -110,6 +109,14 @@ int main(void){
         printf("Valor invalido!\n");
         break;
     }
+    */
+    //Operador ternário: pode ser mais curto que usar if...else em algumas ocasições
+    printf("Digite um valor inteiro: ");
+    scanf("%d", &numero);
+
+    //Condição a testar? verdadeiro : falso
+    numero > 0 ? printf("Positivo!\n") : printf("Negativo!\n");
+
     system("Pause"); //somente para windows
     return 0;
 }
