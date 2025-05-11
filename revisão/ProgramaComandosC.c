@@ -9,7 +9,7 @@ int main(void){
     char frase[10] = "Bom dia!"; //string
     double n3 = 1.23456; //variável real com precisão dupla
 
-    int valor1, valor2, soma, sub, mult, div, numero, resto;
+    int valor1, valor2, soma, sub, mult, div, numero, resto, dia;
     float nota1, nota2, media;
 
     //Usos do comando printf com diversas variáveis
@@ -47,14 +47,14 @@ int main(void){
 
     printf("Resto da divisao %d \n", resto);
 
-    //Condicionais
+    //Condicional if...else
     if(resto == 0){
         printf("Numero par!\n");
     }
     else{
         printf("Numero impar!\n");
     }
-    */
+    
     //Formatando variávies do tipo float
     printf("Digite a primeira nota: ");
     scanf("%f", &nota1);
@@ -77,7 +77,39 @@ int main(void){
     else{
         printf("De recuperacao!\n");
     }
+    */
+    //Condicinal switch..case
+    printf("Digite um valor de 1 a 7: ");
+    scanf("%d", &dia);
 
+    switch (dia)
+    {
+    case 1:
+        printf("Domingo\n");
+        break;
+    case 2:
+        printf("Segunda\n");
+        break;
+    case 3:
+        printf("Terca\n");
+        break;
+    case 4:
+        printf("Quarta\n");
+        break;
+    case 5:
+        printf("Quinta\n");
+        break;
+    case 6:
+        printf("Sexta\n");
+        break;
+    case 7:
+        printf("Sabado\n");
+        break;
+    
+    default:
+        printf("Valor invalido!\n");
+        break;
+    }
     system("Pause"); //somente para windows
     return 0;
 }
