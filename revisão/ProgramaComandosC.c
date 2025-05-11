@@ -10,6 +10,7 @@ int main(void){
     double n3 = 1.23456; //variável real com precisão dupla
 
     int valor1, valor2, soma, sub, mult, div, numero, resto;
+    float nota1, nota2, media;
 
     //Usos do comando printf com diversas variáveis
     printf("Hello World!\n");
@@ -37,7 +38,7 @@ int main(void){
     printf("Valor da subtracao de %d - %d = %d\n", valor1, valor2, sub);
     printf("Valor da multiplicacao de %d * %d = %d\n", valor1, valor2, mult);
     printf("Valor da divisao de %d / %d = %d\n", valor1, valor2, div);
-    */
+    
 
     printf("Digite um valor inteiro: ");
     scanf("%d", &numero);
@@ -53,6 +54,16 @@ int main(void){
     else{
         printf("Numero impar!\n");
     }
+    */
+    //Formatando variávies do tipo float
+    printf("Digite a primeira nota: ");
+    scanf("%f", &nota1);
+    printf("Digite a segunda nota: ");
+    scanf("%f", &nota2);
+
+    media = (nota1 + nota2) / 2;
+
+    printf("Media  = %.2f\n", media);
 
     system("Pause"); //somente para windows
     return 0;
