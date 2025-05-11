@@ -10,7 +10,7 @@ int main(void){
     double n3 = 1.23456; //variável real com precisão dupla
 
     int valor1, valor2, soma, sub, mult, div, numero, resto, dia;
-    float nota1, nota2, media;
+    float nota1, nota2, media, frequencia;
 
     //Usos do comando printf com diversas variáveis
     printf("Hello World!\n");
@@ -77,6 +77,7 @@ int main(void){
     else{
         printf("De recuperacao!\n");
     }
+
     //Condicinal switch..case
     printf("Digite um valor de 1 a 7: ");
     scanf("%d", &dia);
@@ -109,13 +110,40 @@ int main(void){
         printf("Valor invalido!\n");
         break;
     }
-    */
+
     //Operador ternário: pode ser mais curto que usar if...else em algumas ocasições
     printf("Digite um valor inteiro: ");
     scanf("%d", &numero);
 
     //Condição a testar? verdadeiro : falso
     numero > 0 ? printf("Positivo!\n") : printf("Negativo!\n");
+    */
+   //Operadores lógicos && e ||
+    printf("Digite a sua frequencia: ");
+    scanf("%f", &frequencia); 
+    printf("Digite a primeira nota: ");
+    scanf("%f", &nota1);
+    printf("Digite a segunda nota: ");
+    scanf("%f", &nota2);
+
+    media = (nota1 + nota2) / 2;
+
+    printf("Media  = %.2f\n", media);
+
+    //If aninhado
+    if(media >= 7  && frequencia >= 75){//operador lógico &&
+        printf("Aprovado!\n");
+
+    }
+    else{
+        if((media >= 6 && media < 7) && frequencia >= 75){
+         printf("Fazer recuperacao!\n");
+        }
+        else if(media < 6 || frequencia < 75){
+        printf("Reprovado!\n");
+        }
+    }
+
 
     system("Pause"); //somente para windows
     return 0;
