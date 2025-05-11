@@ -65,6 +65,19 @@ int main(void){
 
     printf("Media  = %.2f\n", media);
 
+    //If aninhado
+    if(media >= 6){
+        if(media < 7){
+            printf("Fazer recuperacao!\n");
+        }
+        else if(media >= 7){
+            printf("Aprovado!\n");
+        }
+    }
+    else{
+        printf("De recuperacao!\n");
+    }
+
     system("Pause"); //somente para windows
     return 0;
 }
