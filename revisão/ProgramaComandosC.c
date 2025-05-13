@@ -9,7 +9,7 @@ int main(void){
     char frase[10] = "Bom dia!"; //string
     double n3 = 1.23456; //variável real com precisão dupla
 
-    int valor1, valor2, soma, sub, mult, div, numero, resto, dia;
+    int valor1, valor2, soma, sub, mult, div, numero, resto, dia, cont;
     float nota1, nota2, media, frequencia;
 
     //Usos do comando printf com diversas variáveis
@@ -117,7 +117,7 @@ int main(void){
 
     //Condição a testar? verdadeiro : falso
     numero > 0 ? printf("Positivo!\n") : printf("Negativo!\n");
-    */
+
    //Operadores lógicos && e ||
     printf("Digite a sua frequencia: ");
     scanf("%f", &frequencia); 
@@ -142,6 +142,11 @@ int main(void){
         else if(media < 6 || frequencia < 75){
         printf("Reprovado!\n");
         }
+    }
+    */
+    //Estrutura de repetição for - 57:07
+    for(cont = 1; cont <= 100; cont++){
+        printf("%d - Boa tarde\n", cont);
     }
 
 
