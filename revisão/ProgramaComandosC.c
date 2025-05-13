@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define LINHAS 3
+#define COLUNAS 3
+
 int main(void){
     //Declaração de variáveis
     int n = 10; //atribuindo valor para variável
@@ -163,22 +166,45 @@ int main(void){
         scanf("%d", &resp);
     }
     while (resp > 0);
-    */
-
+    
     //Vetor(array)
     float v1[4] = {7.1, 8.4, 9.5, 5.2};
 
-    printf("Exibindo os valores do Vetor \n\n");
-    /*  
+    printf("Exibindo os valores do Vetor \n\n"); 
     printf("v1[0] = %.1f\n", v1[0]);
     printf("v1[1] = %.1f\n", v1[1]);
     printf("v1[2] = %.1f\n", v1[2]);
     printf("v1[3] = %.1f\n", v1[3]);    
-    */
 
     for(int i = 0; i < 4; i++){
         printf("v1[%d] = %.1f\n", i, v1[i]);
     }
+    */
+    //Matriz
+    int matriz[LINHAS][COLUNAS], i, j;
+    printf("\nDigite valor para a matriz\n\n");
+    for(i = 0; i < 3; i++){
+        for(j = 0; j < 3; j++){
+            printf("\nElemento[%d][%d] = ", i, j);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+
+    printf("\n\n------------ Saida de Dados -------------\n\n");
+        for(i = 0; i < 3; i++){
+            for(j = 0; j < 3; j++){
+                if(j == 0){
+                    printf("|%d", matriz[i][j]);
+                }
+                else if(j == 1){
+                    printf("|%d|", matriz[i][j]);
+                }
+                else{
+                    printf("%d|", matriz[i][j]);
+                }
+            }
+            printf("\n");
+        }
 
     system("Pause"); //somente para windows
     return 0;
