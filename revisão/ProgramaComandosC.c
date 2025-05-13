@@ -143,12 +143,18 @@ int main(void){
         printf("Reprovado!\n");
         }
     }
-    */
+    
     //Estrutura de repetição for - 57:07
     for(cont = 1; cont <= 100; cont++){
         printf("%d - Boa tarde\n", cont);
     }
-
+    */
+   //Estrutura de repetição while
+   cont = 1;
+   while(cont <= 5){
+        printf("%d - Linguagem C\n", cont);
+        cont++;
+   }
 
     system("Pause"); //somente para windows
     return 0;
