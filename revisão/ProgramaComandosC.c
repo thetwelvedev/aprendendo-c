@@ -4,6 +4,17 @@
 #define LINHAS 3
 #define COLUNAS 3
 
+//Funções
+int multiplicar(int pn1, int pn2){//Função com retorno
+    int res;
+    res = pn1 * pn2;
+    return res; //retorna o valor para o main
+}
+
+void exibirResultado(int valor){ //Função sem retorno
+    printf("Resultado = %d\n", valor);
+}
+
 int main(void){
     //Declaração de variáveis
     int n = 10; //atribuindo valor para variável
@@ -205,7 +216,7 @@ int main(void){
             }
             printf("\n");
         }
-    */
+    
     //Struct
 
     //Definindo o conteúdo da struct
@@ -231,6 +242,9 @@ int main(void){
     printf("Matricula.........: %d\n", aluno.matricula);
     printf("Nota da prova 1...: %.2f\n", aluno.nota1);
     printf("Nota da prova 2...: %.2f\n\n", aluno.nota2);
+    */
+   //Saída das funções
+   exibirResultado(multiplicar(3,4));
 
     system("Pause"); //somente para windows
     return 0;
