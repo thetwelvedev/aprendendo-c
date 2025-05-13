@@ -15,6 +15,9 @@ void exibirResultado(int valor){ //Função sem retorno
     printf("Resultado = %d\n", valor);
 }
 
+void display( int var, int *ptr);
+void update(int *p);
+
 int main(void){
     //Declaração de variáveis
     int n = 10; //atribuindo valor para variável
@@ -242,10 +245,38 @@ int main(void){
     printf("Matricula.........: %d\n", aluno.matricula);
     printf("Nota da prova 1...: %.2f\n", aluno.nota1);
     printf("Nota da prova 2...: %.2f\n\n", aluno.nota2);
+    
+    //Saída das funções
+    exibirResultado(multiplicar(3,4));
     */
-   //Saída das funções
-   exibirResultado(multiplicar(3,4));
+    //Ponteiros
+    int var = 15;
+    int *ptr;
+
+    ptr = &var;
+
+    printf("conteudo de var = %d\n", var);
+    printf("endereco de var = %p\n", &var);
+    printf("conteudo apontado por ptr = %d\n", *ptr); //Conteúdo do endereço que ptr aponta
+    printf("endereco apontado por ptr = %p\n", ptr); //Endereço da variável apontada por ptr
+    printf("endereco do ptr           = %p\n", &ptr);
+
+    update(&var); //Passando o endereço para ser alterado globalmente
+
+    display(var,ptr);
 
     system("Pause"); //somente para windows
     return 0;
+}
+
+void display( int var, int *ptr){//Agora que tem ponteiros o valor mesmo trabalhado na função altera globalmente, não só dentro da função.
+    printf("conteudo de var = %d\n", var);
+    printf("endereco de var = %p\n", &var);
+    printf("conteudo apontado por ptr = %d\n", *ptr);
+    printf("endereco apontado por ptr = %p\n", ptr);
+    printf("endereco do ptr           = %p\n", &ptr);
+}
+
+void update(int *p){
+ *p = *p + 1;
 }
