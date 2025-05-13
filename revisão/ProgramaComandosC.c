@@ -9,7 +9,7 @@ int main(void){
     char frase[10] = "Bom dia!"; //string
     double n3 = 1.23456; //variável real com precisão dupla
 
-    int valor1, valor2, soma, sub, mult, div, numero, resto, dia, cont = 100;
+    int valor1, valor2, soma, sub, mult, div, numero, resto, dia, cont, resp;
     float nota1, nota2, media, frequencia;
 
     /*
@@ -159,9 +159,10 @@ int main(void){
   */
     //Estrutura de repetição do...while
     do{
-        printf("%d - looping do..while \n", cont); //Mesmo se a condição fpr falsa ele roda uma vez pelo menos
+        printf("Digite um valor: "); //Mesmo se a condição fpr falsa ele roda uma vez pelo menos
+        scanf("%d", &resp);
     }
-    while (cont < 10);
+    while (resp > 0);
  
     system("Pause"); //somente para windows
     return 0;
