@@ -9,9 +9,10 @@ int main(void){
     char frase[10] = "Bom dia!"; //string
     double n3 = 1.23456; //variável real com precisão dupla
 
-    int valor1, valor2, soma, sub, mult, div, numero, resto, dia, cont;
+    int valor1, valor2, soma, sub, mult, div, numero, resto, dia, cont = 100;
     float nota1, nota2, media, frequencia;
 
+    /*
     //Usos do comando printf com diversas variáveis
     printf("Hello World!\n");
     printf("Exibindo o numero inteiro(integer) %d\n", n);
@@ -21,7 +22,7 @@ int main(void){
     printf("Exibindo o numero real de dupla precisao(double) %f\n", n3);
     printf("Valores: %d %f %c %s %f\n", n, n2, letra, frase, n3); //Exibindo várias variáveis num mesmo print
 
-    /*
+    
     //Utilização de scanf
     printf("Digite um valor inteiro: ");
     scanf("%d", &valor1);
@@ -148,14 +149,20 @@ int main(void){
     for(cont = 1; cont <= 100; cont++){
         printf("%d - Boa tarde\n", cont);
     }
-    */
+    
    //Estrutura de repetição while
    cont = 1;
    while(cont <= 5){
         printf("%d - Linguagem C\n", cont);
         cont++;
    }
-
+  */
+    //Estrutura de repetição do...while
+    do{
+        printf("%d - looping do..while \n", cont); //Mesmo se a condição fpr falsa ele roda uma vez pelo menos
+    }
+    while (cont < 10);
+ 
     system("Pause"); //somente para windows
     return 0;
 }
