@@ -156,14 +156,30 @@ int main(void){
         printf("%d - Linguagem C\n", cont);
         cont++;
    }
-  */
+ 
     //Estrutura de repetição do...while
     do{
         printf("Digite um valor: "); //Mesmo se a condição fpr falsa ele roda uma vez pelo menos
         scanf("%d", &resp);
     }
     while (resp > 0);
- 
+    */
+
+    //Vetor(array)
+    float v1[4] = {7.1, 8.4, 9.5, 5.2};
+
+    printf("Exibindo os valores do Vetor \n\n");
+    /*  
+    printf("v1[0] = %.1f\n", v1[0]);
+    printf("v1[1] = %.1f\n", v1[1]);
+    printf("v1[2] = %.1f\n", v1[2]);
+    printf("v1[3] = %.1f\n", v1[3]);    
+    */
+
+    for(int i = 0; i < 4; i++){
+        printf("v1[%d] = %.1f\n", i, v1[i]);
+    }
+
     system("Pause"); //somente para windows
     return 0;
 }
