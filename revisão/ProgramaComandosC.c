@@ -179,7 +179,7 @@ int main(void){
     for(int i = 0; i < 4; i++){
         printf("v1[%d] = %.1f\n", i, v1[i]);
     }
-    */
+
     //Matriz
     int matriz[LINHAS][COLUNAS], i, j;
     printf("\nDigite valor para a matriz\n\n");
@@ -205,6 +205,32 @@ int main(void){
             }
             printf("\n");
         }
+    */
+    //Struct
+
+    //Definindo o conteúdo da struct
+    struct fichaAluno{
+        int matricula;
+        float nota1;
+        float nota2;
+    };
+
+    //Criando a variável aluno que será do tipo struct fichaAluno
+    struct fichaAluno aluno;
+
+    printf("Numero de matricula ..: ");
+    scanf("%d", &aluno.matricula);
+
+    printf("Informe a 1a. nota ..: ");
+    scanf("%f", &aluno.nota1);
+
+    printf("Informe a 2a. nota ..: ");
+    scanf("%f", &aluno.nota2);
+
+    printf("\n\n--------------- Lendo os dados da struct ------------------\n\n");
+    printf("Matricula.........: %d\n", aluno.matricula);
+    printf("Nota da prova 1...: %.2f\n", aluno.nota1);
+    printf("Nota da prova 2...: %.2f\n\n", aluno.nota2);
 
     system("Pause"); //somente para windows
     return 0;
