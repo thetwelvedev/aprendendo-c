@@ -12,7 +12,7 @@ laço de repetição, vetores, strings, structs, funções e uso de arquivos-fon
 ### University Academy - Udemy
 > Aprendendo os primeiros passos, função main, compilador, estruturas de decisões, 
 estruturas de repetição, tipos de dados, vetores, matrizes, números binários, funções,
-ponteiros, struct, arquivos...
+ponteiros, struct, arquivos
 
 #### Ferramentas e linguagens utilizadas:
 <div>
