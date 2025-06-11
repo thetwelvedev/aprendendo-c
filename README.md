@@ -12,7 +12,7 @@ laço de repetição, vetores, strings, structs, funções e uso de arquivos-fon
 ### University Academy - Udemy
 > Aprendendo os primeiros passos, função main, compilador, estruturas de decisões, 
 estruturas de repetição, tipos de dados, vetores, matrizes, números binários, funções,
-ponteiros, arquivos, struct...
+ponteiros, arquivos, struct, recursividade...
 
 ### Revisão
 > C começa com main(), usa tipos básicos (int, float, char), estruturas de controle (if/else, for/while), trabalha com vetores, matrizes, funções (passagem por valor/referência), ponteiros (manipulação de memória) e structs (tipos customizados).
