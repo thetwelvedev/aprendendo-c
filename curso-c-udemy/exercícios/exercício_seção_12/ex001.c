@@ -3,6 +3,10 @@ apresente o somatório dos números de 1 a N. */
 #include <stdio.h>
 
 int somatorio(int n){
+    if(n < 0){
+        printf("Valor tem que ser positivo!.\n");
+        return 0;
+    }
     if(n <= 1){ //Caso base
         return n;
     }
