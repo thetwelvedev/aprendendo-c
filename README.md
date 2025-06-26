@@ -20,6 +20,7 @@ for/while), trabalha com vetores, matrizes, funções (passagem por valor/refer�
 ponteiros (manipulação de memória) e structs (tipos customizados).
 
 #### Ferramentas e linguagens utilizadas:
+
 <div>
   <img src="https://img.shields.io/badge/-VS%20Code-007ACC?logo=visual-studio-code&logoColor=white&style=flat" alt="VS Code">
   <img src="https://img.shields.io/badge/-C-00599C?logo=c&logoColor=white&style=flat" alt="C">
