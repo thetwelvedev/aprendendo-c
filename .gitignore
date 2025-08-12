@@ -50,8 +50,8 @@
 *.x86_64
 *.hex
 
-# Executáveis gerados no Linux sem extensão (nomes comuns)
-10??.out
+# Executáveis gerados no Linux
+beecrowd/Iniciante/output/*
 
 # Ignorar executáveis na pasta bin ou build
 /bin/
