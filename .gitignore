@@ -1,34 +1,48 @@
-# Prerequisites
+# =========================
+# Prerequisites / Dependências
+# =========================
 *.d
 
-# Object files
+# =========================
+# Object files / Arquivos objeto
+# =========================
 *.o
 *.ko
 *.obj
 *.elf
 
-# Linker output
+# =========================
+# Linker output / Saída do Linker
+# =========================
 *.ilk
 *.map
 *.exp
 
-# Precompiled Headers
+# =========================
+# Precompiled Headers / Cabeçalhos pré-compilados
+# =========================
 *.gch
 *.pch
 
-# Libraries
+# =========================
+# Libraries / Bibliotecas
+# =========================
 *.lib
 *.a
 *.la
 *.lo
 
-# Shared objects (inc. Windows DLLs)
+# =========================
+# Shared objects (Linux/Windows/macOS)
+# =========================
 *.dll
 *.so
 *.so.*
 *.dylib
 
-# Executables
+# =========================
+# Executables / Executáveis
+# =========================
 *.exe
 *.out
 *.app
@@ -36,13 +50,25 @@
 *.x86_64
 *.hex
 
-# Debug files
+# Executáveis gerados no Linux sem extensão (nomes comuns)
+10??.out
+
+# Ignorar executáveis na pasta bin ou build
+/bin/
+/build/
+/dist/
+
+# =========================
+# Debug files / Arquivos de depuração
+# =========================
 *.dSYM/
 *.su
 *.idb
 *.pdb
 
-# Kernel Module Compile Results
+# =========================
+# Kernel Module Compile Results / Resultados de compilação de módulo de kernel
+# =========================
 *.mod*
 *.cmd
 .tmp_versions/
