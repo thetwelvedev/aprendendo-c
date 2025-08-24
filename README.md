@@ -18,6 +18,7 @@ ponteiros, arquivos, struct, recursividade, diretrizes de compilação...
 > C começa com main(), usa tipos básicos (int, float, char), estruturas de controle (if/else, for/while), trabalha com vetores, matrizes, funções (passagem por valor/referência), ponteiros (manipulação de memória) e structs (tipos customizados).
 
 #### Resoluções Beecrowd
+
 [Acesse aqui](/beecrowd/)
 
 #### Ferramentas e linguagens utilizadas:
