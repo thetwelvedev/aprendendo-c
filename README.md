@@ -15,7 +15,9 @@ estruturas de repetição, tipos de dados, vetores, matrizes, números binários
 ponteiros, arquivos, struct, recursividade, diretrizes de compilação, principais bibliotecas...
 
 ### Revisão YouTube
-> C começa com main(), usa tipos básicos (int, float, char), estruturas de controle (if/else, for/while), trabalha com vetores, matrizes, funções (passagem por valor/referência), ponteiros (manipulação de memória) e structs (tipos customizados).
+> C começa com main(), usa tipos básicos (int, float, char), estruturas de controle (if/else, for/while), 
+trabalha com vetores, matrizes, funções (passagem por valor/referência), ponteiros (manipulação de memória) 
+e structs (tipos customizados).
 
 #### Resoluções Beecrowd
 [Acesse aqui](/beecrowd/)
